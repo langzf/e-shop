@@ -1,0 +1,16 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: user_server
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/my_data_base?serverTimezone=GMT
+    username: root
+    password: 351412Zhifa
+    driver-class-name: com.mysql.jdbc.Driver
+eureka:
+  client:
+    service-url:
+      defaultZone: http://39.97.101.222:8761/eureka/
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
